@@ -1,0 +1,94 @@
+$dk-grey: rgb(54, 54, 54);
+$lights-on: rgb(255, 207, 82);
+$lights-off: rgb(18, 35, 94);
+
+/*=====Windows=====*/
+
+.summary::before,
+.explanation::before,
+.requirements::before,
+.participation::before,
+.benefits::after {
+    @include animation(lights-before 10s linear infinite);
+    @include animation-delay(3s);
+}
+
+.preamble::before,
+.explanation::after,
+.requirements::after,
+.benefits::before {
+    @include animation(lights-after 15s linear infinite);
+    @include animation-delay(5s);
+}
+
+/*=====stars=====*/
+.extra1, .extra1::before,
+.extra3, .extra3::before {
+    @include animation(twinkle 600ms ease infinite);
+}
+
+.extra2, .extra2::after,
+.extra4, .extra4::after {
+    @include animation(twinkle 400ms ease infinite);
+}
+/*=====blinds=====*/
+
+// .explanation::after {
+//         @include animation(pull 1s ease infinite);
+// }
+
+
+/*==========keyframes==========*/
+
+@include keyframes(lights-before) {
+    0% {
+        background-color: $lights-on;
+    }
+    20% {
+        background-color: $lights-on;
+    }
+    21% {
+        background-color: $lights-off;
+    }
+    100% {
+        background-color: $lights-off;
+    }
+}
+
+
+@include keyframes(lights-after) {
+    0% {
+        background-color: $lights-on;
+    }
+    20% {
+        background-color: $lights-on;
+    }
+    21% {
+        background-color: $lights-off;
+    }
+    100% {
+        background-color: $lights-off;
+    }
+}
+
+
+@include keyframes(twinkle) {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: #acacac;
+    }
+    100% {
+        background-color: white;
+    }
+}
+
+// @include keyframes(pull) {
+//     0% {
+//         background-size: 25%;
+//     }
+//     100% {
+//         background-size: 100%;
+//     }
+// }
