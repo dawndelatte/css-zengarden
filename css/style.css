@@ -220,15 +220,11 @@ footer, aside {
 .summary::after {
   background-image: url(../assets/curtains.svg);
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 160%;
+  background-position: center; }
 
 .explanation::after {
   background-image: url(../assets/blinds.svg);
-  background-repeat: no-repeat;
-  background-size: 100%; }
-
-.benefits::before {
-  background-image: url(../assets/person.svg);
   background-repeat: no-repeat;
   background-size: 100%; }
 

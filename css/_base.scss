@@ -66,7 +66,8 @@ footer, aside {
 
     background-image: url(../assets/curtains.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 160%;
+    background-position: center;
 }
 
 .explanation::after {
@@ -75,11 +76,12 @@ footer, aside {
         background-repeat: no-repeat;  
         background-size: 100%;  
 }
-.benefits::before {
-    background-image: url(../assets/person.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
+// .benefits::before {
+//     background-image: url(../assets/person.svg);
+//     background-repeat: no-repeat;
+//     background-size: 100%;
+// }
+
 .preamble::after, .explanation::after, .benefits::before, .requirements::after {
     float: right;
     margin-right: 5%;
