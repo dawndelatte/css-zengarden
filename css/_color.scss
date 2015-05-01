@@ -18,7 +18,7 @@ body {
 }
 
 p a {
-    color: $dk-grey;
+    color: #1b4873;
 }
 
 .summary p, .preamble p, .explanation p, .participation p,
@@ -40,7 +40,8 @@ footer {
     a {
         color: $lights-on;
         &:hover {
-            color: darken($lights-on, 30%);
+            // color: darken($lights-on, 30%);
+            color:  #1b4873;
         }
     }
 }

@@ -140,7 +140,7 @@ body ul {
   background-color: #ffcf52; }
 
 p a {
-  color: #363636; }
+  color: #1b4873; }
 
 .summary p, .preamble p, .explanation p, .participation p,
 .benefits p, .requirements p {
@@ -158,7 +158,7 @@ footer {
   footer a {
     color: #ffcf52; }
     footer a:hover {
-      color: #b88500; }
+      color: #1b4873; }
 
 /* ========== global ========== */
 body {
